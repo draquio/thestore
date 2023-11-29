@@ -4,11 +4,20 @@ import { CartItem } from "./CartItem";
 import { ArrowIcon, TrashIcon } from "../Icons";
 import { TotalPrice, formatNumber } from "../../utils/Functions";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export const Cart = ({ isActiveMenu, closeMenu }) => {
   const { cart, clearCart, addToCart, removeOneFromCart, removeFromCart } =
     useCart();
   const totalprice = formatNumber(TotalPrice(cart));
+  useEffect(() => {
+    if (isActiveMenu) {
+      document.body.style.overflow = 'hidden';
+    }else{
+      document.body.style.overflow = 'visible';
+    }
+  }, [isActiveMenu])
+  
   return (
     <>
       <div
