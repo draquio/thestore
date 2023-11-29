@@ -3,7 +3,6 @@ import { useCart } from "../../hooks/useCart";
 import { TotalPrice, formatNumber } from "../../utils/Functions";
 import {CartItem} from "../Cart/CartItem"
 import { ArrowIcon } from "../Icons";
-
 export const Sidebar = ({HandleCheckout}) => {
   const { cart, addToCart, removeOneFromCart, removeFromCart } = useCart();
   const totalprice = formatNumber(TotalPrice(cart));

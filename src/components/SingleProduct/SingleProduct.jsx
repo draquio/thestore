@@ -1,8 +1,9 @@
+import "../Scss/SingleProduct.scss"
 import { useEffect, useState } from "react";
 import { products } from "../../mocks/products.json";
 import { ImageSectionProduct } from "./ImageSectionProduct";
 import { InfoSectionProduct } from "./InfoSectionProduct";
-import "./SingleProduct.scss";
+
 
 
 export const SingleProduct = ({ id }) => {
