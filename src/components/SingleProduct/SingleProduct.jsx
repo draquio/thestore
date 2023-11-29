@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { products } from "../../mocks/products.json";
 import { ImageSectionProduct } from "./ImageSectionProduct";
 import { InfoSectionProduct } from "./InfoSectionProduct";
-import "./SingleProduct.scss";
+import "./SingleProduct";
+
 
 export const SingleProduct = ({ id }) => {
   const [product, setProduct] = useState(null);
