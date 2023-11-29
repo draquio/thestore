@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+@import "./Scss/Index.scss";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: $text_color_dark;
+}
+.lazy-load-image-background.blur.lazy-load-image-loaded{
+  display: block !important;
+}

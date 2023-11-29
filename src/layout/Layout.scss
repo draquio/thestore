@@ -1,0 +1,14 @@
+@import "../Scss/Index.scss";
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: $background_page;
+    .container{
+        max-width: $max-width;
+        margin:  30px auto;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}

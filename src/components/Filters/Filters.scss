@@ -1,13 +1,31 @@
-.filters{
+@import "../../Scss/Index.scss";
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100%;
+  div {
     display: flex;
+    gap: 1rem;
     align-items: center;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 700;
-    max-width: 600px;
-    margin: auto;
-    div{
-        display: flex;
-        gap: 1rem;
+    .select_category {
+      padding: 5px 10px;
+      border-radius: 2px;
+      border: 1px solid $main_color;
+      color: $text_color_dark;
+      width: 175px;
+      &:focus-visible {
+        outline: none;
+      }
     }
+  }
+}
+
+@media (max-width: 600px) {
+  .filters {
+    flex-direction: column;
+    gap: 25px;
+  }
 }

@@ -1,6 +1,6 @@
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./index.css";
+import "./index.scss";
 import { FilterProvider } from "./context/filters.jsx";
 import { CardProvider } from "./context/cart.jsx";
 

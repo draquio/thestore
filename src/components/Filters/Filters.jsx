@@ -1,11 +1,13 @@
 import { useId } from "react";
 import "./Filters.scss";
 import { useFilters } from "../../hooks/usefilter";
+import { products } from "../../mocks/products.json";
+import { getCategories } from "../../utils/Functions";
 export const Filters = () => {
-  const {filters, setFilters} = useFilters();
+  const { filters, setFilters } = useFilters();
   const minPriceId = useId();
   const categoryFilterId = useId();
-
+  const categories = getCategories(products);
   const handleChangeMinPrice = (e) => {
     setFilters((prevState) => ({
       ...prevState,
@@ -18,11 +20,13 @@ export const Filters = () => {
       category: e.target.value,
     }));
   };
+
   return (
     <section className="filters">
       <div>
-        <label htmlFor={minPriceId}>Precio</label>
+        <label htmlFor={minPriceId}>Min Price</label>
         <input
+          className="range_price"
           id={minPriceId}
           type="range"
           min="0"
@@ -33,11 +37,20 @@ export const Filters = () => {
         <span>{filters.minPrice}$</span>
       </div>
       <div>
-        <label htmlFor={categoryFilterId}>Categoria</label>
-        <select id={categoryFilterId} onChange={handleChangeCategory}>
-          <option value="all">Todas</option>
-          <option value="laptops">Laptops</option>
-          <option value="smartphones">Celulares</option>
+        <label htmlFor={categoryFilterId}>Categoría</label>
+        <select
+          className="select_category"
+          id={categoryFilterId}
+          onChange={handleChangeCategory}
+        >
+          <option key={"all"} value="all">
+            All
+          </option>
+          {categories.map((categorie, index) => (
+            <option key={index} value={categorie}>
+              {categorie}
+            </option>
+          ))}
         </select>
       </div>
     </section>

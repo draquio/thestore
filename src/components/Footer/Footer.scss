@@ -1,0 +1,16 @@
+@import "../../Scss/Index.scss";
+.footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    border-top: 1px solid $transparent_color;
+    background-color: $background;
+    a{
+        text-decoration: none;
+        text-align: center;
+        color: $text_color_dark;
+        padding: 0 10px;
+    }
+}

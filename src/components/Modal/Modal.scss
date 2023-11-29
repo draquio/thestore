@@ -1,0 +1,64 @@
+@import "../../Scss/Index.scss";
+.modal {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.406);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease-in-out all;
+  
+  .modal_content {
+    width: 500px;
+    min-height: 100px;
+    margin: 0 20px;
+    padding: 20px;
+    background: $background;
+    box-sizing: border-box;
+    position: relative;
+    border-radius: $border_radius;
+    transform: scale(0.8);
+    transition: 0.2s ease-in-out all;
+    h2 {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .checkicon {
+      background: $main_color;
+      color: white;
+      padding: 30px;
+      border-radius: 50%;
+      position: absolute;
+      font-size: 50px;
+      left: 50%;
+      transform: translate(-50%, -70%);
+    }
+    .total {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+      span {
+        background: $background_page;
+        padding: 15px;
+        font-weight: bold;
+      }
+    }
+    .ok_button {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  &.active{
+    opacity: 1;
+    visibility: visible;
+  }
+  &.active .modal_content{
+    transform: scale(1);
+  }
+}

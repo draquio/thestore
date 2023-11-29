@@ -1,0 +1,57 @@
+@import "../../Scss/Index.scss";
+.nav {
+  width: 100%;
+  border-bottom: 2px solid $transparent_color;
+  background-color: $background;
+  .nav_container {
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    .nav_logo {
+      margin: 0 10px;
+      font-size: 30px;
+      a {
+        text-decoration: none;
+        color: $text_color_dark;
+      }
+    }
+    .nav_shop {
+      margin: 0 10px;
+      position: relative;
+      cursor: pointer;
+      .icon_shop {
+        font-size: 30px;
+      }
+      .shop_item_number {
+        position: absolute;
+        background-color: $main_color;
+        font-weight: bold;
+        color: white;
+        top: -5px;
+        right: -7px;
+        border-radius: 50%;
+        padding: 3px;
+        width: 14px;
+        height: 14px;
+        display: flex;
+        font-size: 12px;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (max-width: $responsive) {
+  .nav .nav_container {
+    .nav_shop,
+    .nav_logo {
+      margin: 0 20px;
+    }
+  }
+}

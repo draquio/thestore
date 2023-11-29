@@ -1,0 +1,54 @@
+@import "../../Scss/Index.scss";
+.sidebar {
+  padding: 20px;
+  .info_cart {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  ul {
+    width: 100%;
+    max-height: 460px;
+    overflow: auto;
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-bottom: 7px;
+      padding-bottom: 7px;
+      border-bottom: 1px solid $main_color;
+      &:last-child {
+        border-bottom: 0;
+      }
+      img {
+        width: 100%;
+        max-width: 50px;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        height: 50px;
+      }
+      .info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        .price_title {
+          width: 72%;
+        }
+        .quantity {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 80px;
+        }
+      }
+    }
+  }
+  .btn_pay {
+    width: 100%;
+    height: 50px;
+    gap: 6px;
+    margin-top: 10px;
+  }
+}

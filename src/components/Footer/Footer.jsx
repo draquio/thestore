@@ -1,9 +1,9 @@
-
+import { Link } from "react-router-dom";
+import "./Footer.scss";
 export const Footer = () => {
-
   return (
-    <footer className="footer">
-        <h4>Draquio</h4>
-    </footer>
-  )
-}
+    <Link to={"https://draquioportfolio.vercel.app/"} target="_blank">
+      © Sergio Mercado (Draquio) | Fullstack Developer
+    </Link>
+  );
+};
