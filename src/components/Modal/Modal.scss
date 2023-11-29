@@ -3,7 +3,7 @@
   position: fixed;
   opacity: 0;
   visibility: hidden;
-  background: rgba(0, 0, 0, 0.406);
+  background-color: rgb(0 0 0 / 40%);
   height: 100%;
   width: 100%;
   top: 0;
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   transition: 0.2s ease-in-out all;
-  
+  backdrop-filter: blur(12px);
   .modal_content {
     width: 500px;
     min-height: 100px;

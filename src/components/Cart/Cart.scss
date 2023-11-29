@@ -17,6 +17,7 @@
 }
 .cart {
   background: $text_color_light;
+  backdrop-filter: blur(12px);
   display: block;
   z-index: 2;
   position: fixed;
