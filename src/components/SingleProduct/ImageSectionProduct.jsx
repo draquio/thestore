@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-
 export const ImageSectionProduct = ({ images, title }) => {
   const [mainIMG, setMainIMG] = useState(images[0]);
   const changeMainImg = (img) => {
