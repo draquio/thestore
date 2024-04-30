@@ -43,22 +43,21 @@
   }
   img {
     width: 100%;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
     display: block;
     object-fit: cover;
     background-color: #fff;
   }
 }
 
-
 @media (max-width: $responsive) {
-  .products ul{
+  .products ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: $responsive_small) {
-  .products ul{
+  .products ul {
     grid-template-columns: repeat(1, 1fr);
   }
 }

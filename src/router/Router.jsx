@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import { Layout } from "../layout/Layout";
 import { Home } from "../pages/Home";
 import { Single } from "../pages/Single";
-import { LayoutSidebar } from "../layout/LayoutSidebar";
 import { Checkout } from "../pages/Checkout";
 
 export const Router = () => {
