@@ -25,11 +25,28 @@
         display: flex;
         flex-direction: column;
         gap: 1rem;
-        box-shadow: 4px 5px 16px #cfcfcf;
+        box-shadow: 0px 3px 7px 0px #cfcfcf;
         padding: 1rem;
         align-items: center;
+        transition: 0.3s ease-in-out all;
         .info_price {
           text-decoration: none;
+        }
+        .base_price{
+          padding: 5px 20px;
+          display: flex;
+          column-gap: 10px;
+          .Addcarticon{
+            font-size: 20px;
+          }
+        }
+        &:hover{
+          box-shadow: 0px 3px 7px 0px #888888;
+        }
+        &:hover .base_price{
+          box-shadow: 1px 1px 10px 0px rgba(35, 80, 245, 0.75);
+          -webkit-box-shadow: 1px 1px 10px 0px rgba(35, 80, 245, 0.75);
+          -moz-box-shadow: 1px 1px 10px 0px rgba(35, 80, 245, 0.75);
         }
       }
     }

@@ -1,6 +1,5 @@
 import { createContext } from "react";
 import {useCartReducer} from "../hooks/useCartReducer"
-// import { CartReducer } from "../reducers/cartReducer";
 
 export const CartContext = createContext();
 

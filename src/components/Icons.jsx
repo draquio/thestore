@@ -99,6 +99,7 @@ export const MinusIcon = () => {
 export const AddCartIcon = () => {
   return (
     <svg
+      className="Addcarticon"
       stroke="currentColor"
       fill="currentColor"
       strokeWidth="0"

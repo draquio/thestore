@@ -5,6 +5,7 @@ import { products } from "../../mocks/products.json";
 import { getCategories } from "../../utils/Functions";
 export const Filters = () => {
   const { filters, setFilters } = useFilters();
+  console.log(filters);
   const minPriceId = useId();
   const categoryFilterId = useId();
   const categories = getCategories(products);
@@ -42,6 +43,7 @@ export const Filters = () => {
           className="select_category"
           id={categoryFilterId}
           onChange={handleChangeCategory}
+          value={filters.category}
         >
           <option key={"all"} value="all">
             All
